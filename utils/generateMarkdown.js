@@ -25,7 +25,10 @@ function renderLicenseLink(license){
 }
 
 // returns license section of README 
-function renderLicenseSection(license){}
+function renderLicenseSection(license){
+    return `## License
+    ${answers.license}`;
+}
 
 // generate markdown for README
 function generateMarkdown(answers){
