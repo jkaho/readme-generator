@@ -1,3 +1,13 @@
+// returns description section of README 
+function renderDescription(description){
+    if (description === undefined) {
+        return '';
+    } else {
+        return `## Description
+${description}`;
+    }
+}
+
 // returns license badge
 function renderLicenseBadge(license){
     if (license === undefined){
@@ -38,8 +48,8 @@ function renderLicenseSection(license){
         return '';
     } else {
         return `## License
-        ${license}
-        License link: ${renderLicenseLink(license)}
+${license}
+License link: ${renderLicenseLink(license)}
         `;
     }
 }
@@ -47,10 +57,9 @@ function renderLicenseSection(license){
 // generate markdown for README
 function generateMarkdown(data){
     return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
-
-    ${renderLicenseSection(data.license)}
-    `;
+${renderLicenseBadge(data.license)}
+${renderDescription(data.description)}
+${renderLicenseSection(data.license)}`;
 }
 
 module.exports = generateMarkdown;
