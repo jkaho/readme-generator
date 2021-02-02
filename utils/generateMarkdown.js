@@ -1,5 +1,5 @@
 // returns description section of README 
-function renderDescription(description){
+function renderDescriptionSection(description){
     if (description === undefined) {
         return '';
     } else {
@@ -9,12 +9,22 @@ ${description}`;
 }
 
 // returns installation section of README 
-function renderInstallationInstructions(installation){
+function renderInstallationSection(installation){
     if (installation === undefined) {
         return '';
     } else {
         return `## Installation
 ${installation}`;
+    }
+}
+
+// returns usage section of README 
+function renderUsageSection(usage){
+    if (usage === undefined) {
+        return '';
+    } else {
+        return `## Usage
+${usage}`;
     }
 }
 
@@ -68,8 +78,9 @@ License link: ${renderLicenseLink(license)}
 function generateMarkdown(data){
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
-${renderDescription(data.description)}
-${renderInstallationInstructions(data.installation)}
+${renderDescriptionSection(data.description)}
+${renderInstallationSection(data.installation)}
+${renderUsageSection(data.usage)}
 ${renderLicenseSection(data.license)}`;
 }
 
