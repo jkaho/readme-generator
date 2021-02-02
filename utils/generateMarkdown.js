@@ -12,7 +12,17 @@ function renderLicenseBadge(license){
 }
 
 // returns license link
-function renderLicenseLink(license){}
+function renderLicenseLink(license){
+    if (license === 'Apache 2.0 License') {
+        return '[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)';
+    } else if (license === 'GNU GPLv3') {
+        return '[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0)';
+    } else if (license === 'ISC') {
+        return '[ISC](https://opensource.org/licenses/ISC)';
+    } else {
+        return '[MIT](https://opensource.org/licenses/MIT)';
+    }
+}
 
 // returns license section of README 
 function renderLicenseSection(license){}
