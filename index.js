@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const generateMarkdown = require('generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -90,7 +90,7 @@ const init = () => {
     promptUser()
     .then((answers) =>
     {
-        console.log(answers.content);
+        console.log(answers.license);
     })
 }
 
