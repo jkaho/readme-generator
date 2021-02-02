@@ -77,6 +77,12 @@ const promptUser = () => {
             name: 'tests',
             message: "Type your project test instructions:",
             when: (answers) => answers.content.includes('Tests')
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: "Your GitHub username:",
+            when: (answers) => answers.content.includes('Questions')
         }
     ]);
 };
