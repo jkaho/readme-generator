@@ -81,16 +81,16 @@ const promptUser = () => {
     ]);
 };
 
-const generateREADME = (answers) =>
-`# ${answers.title}
-`
-;
+// const generateREADME = (answers) =>
+// `# ${answers.title}
+// `
+// ;
 
 const init = () => {
     promptUser()
     .then((answers) =>
     {
-        console.log(answers.license);
+        console.log(generateMarkdown(answers));
     })
 }
 

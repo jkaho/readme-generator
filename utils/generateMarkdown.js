@@ -38,18 +38,18 @@ function renderLicenseSection(license){
         return '';
     } else {
         return `## License
-        ${answers.license}
+        ${license}
         License link: ${renderLicenseLink(license)}
         `;
     }
 }
 
 // generate markdown for README
-function generateMarkdown(answers){
-    return `# ${answers.title}
-    ${renderLicenseBadge(answers.license)}
+function generateMarkdown(data){
+    return `# ${data.title}
+    ${renderLicenseBadge(data.license)}
 
-    ${renderLicenseSection(answers.license)}
+    ${renderLicenseSection(data.license)}
     `;
 }
 
