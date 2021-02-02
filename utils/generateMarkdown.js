@@ -28,6 +28,16 @@ ${usage}`;
     }
 }
 
+// returns contributing section of README 
+function renderContributingSection(contributing){
+    if (contributing === undefined) {
+        return '';
+    } else {
+        return `## Contributing
+${contributing}`;
+    }
+}
+
 // returns license badge
 function renderLicenseBadge(license){
     if (license === undefined){
@@ -81,6 +91,7 @@ ${renderLicenseBadge(data.license)}
 ${renderDescriptionSection(data.description)}
 ${renderInstallationSection(data.installation)}
 ${renderUsageSection(data.usage)}
+${renderContributingSection(data.contributing)}
 ${renderLicenseSection(data.license)}`;
 }
 
