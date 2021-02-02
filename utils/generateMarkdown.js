@@ -8,6 +8,16 @@ ${description}`;
     }
 }
 
+// returns installation section of README 
+function renderInstallationInstructions(installation){
+    if (installation === undefined) {
+        return '';
+    } else {
+        return `## Installation
+${installation}`;
+    }
+}
+
 // returns license badge
 function renderLicenseBadge(license){
     if (license === undefined){
@@ -59,6 +69,7 @@ function generateMarkdown(data){
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
 ${renderDescription(data.description)}
+${renderInstallationInstructions(data.installation)}
 ${renderLicenseSection(data.license)}`;
 }
 
