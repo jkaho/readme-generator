@@ -108,7 +108,7 @@ function renderEmail(email){
     if (email === undefined) {
         return '';
     } else {
-        return `My Email: [${email}](mailto:${email})`;
+        return `If you have any further questions, please email me at [${email}](mailto:${email}).`;
     }
 }
 
