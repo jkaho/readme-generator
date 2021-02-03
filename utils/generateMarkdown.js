@@ -94,6 +94,35 @@ License link: ${renderLicenseLink(license)}
     }
 }
 
+// returns GitHub link
+function renderGitHubLink(github){
+    if (github === undefined) {
+        return '';
+    } else {
+        return `My GitHub Profile: [${github}](https://github.com/${github})`;
+    }
+}
+
+// returns email address
+function renderEmail(email){
+    if (email === undefined) {
+        return '';
+    } else {
+        return `My Email: [${email}](mailto:${email})`;
+    }
+}
+
+// returns questions section of README 
+function renderQuestionsSection(github, email){
+    if (github === undefined || email === undefined) {
+        return '';
+    } else {
+        return `## Questions
+${renderGitHubLink(github)}
+${renderEmail(email)}`;
+    }
+}
+
 // generate markdown for README
 function generateMarkdown(data){
     return `# ${data.title}
@@ -103,7 +132,8 @@ ${renderInstallationSection(data.installation)}
 ${renderUsageSection(data.usage)}
 ${renderContributingSection(data.contributing)}
 ${renderTestsSection(data.tests)}
-${renderLicenseSection(data.license)}`;
+${renderLicenseSection(data.license)}
+${renderQuestionsSection(data.github, data.email)}`;
 }
 
 module.exports = generateMarkdown;
