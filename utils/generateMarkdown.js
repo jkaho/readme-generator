@@ -13,7 +13,7 @@ function renderTableOfContents(content){
     let tableOfContents = "## Table of Contents";
     content.forEach(section => {
         if (section !== 'Description' && section !== 'Table of Contents'){
-            tableOfContents += `\n- [${section}](# ${section})`;
+            tableOfContents += `\n- [${section}](#${section})`;
         }
     })
     return tableOfContents;
@@ -100,7 +100,7 @@ function renderLicenseSection(license){
     } else {
         return `## License
 This application is covered under the ${license} license.
-License link: ${renderLicenseLink(license)}`;
+\nLicense link: ${renderLicenseLink(license)}`;
     }
 }
 
@@ -129,7 +129,7 @@ function renderQuestionsSection(github, email){
     } else {
         return `## Questions
 ${renderGitHubLink(github)}
-${renderEmail(email)}`;
+\n${renderEmail(email)}`;
     }
 }
 
