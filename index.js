@@ -89,19 +89,6 @@ const promptUser = () => {
             name: 'email',
             message: "Your email address:",
             when: (answers) => answers.content.includes('Questions')
-        },
-        {
-            type: 'input',
-            name: 'emailconfirm',
-            message: "Please re-enter your email address:",
-            when: (answers) => answers.content.includes('Questions'),
-            validate: (answers) => {
-                if (answers.email === answers.emailconfirm) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
         }
     ]);
 };
