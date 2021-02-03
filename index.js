@@ -93,11 +93,6 @@ const promptUser = () => {
     ]);
 };
 
-// const generateREADME = (answers) =>
-// `# ${answers.title}
-// `
-// ;
-
 const init = () => {
     promptUser()
     .then((answers) =>
