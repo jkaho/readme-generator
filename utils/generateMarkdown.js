@@ -8,6 +8,17 @@ ${description}`;
     }
 }
 
+// returns table of contents section of README 
+function renderTableOfContents(content){
+    let tableOfContents = "## Table of Contents";
+    content.forEach(section => {
+        if (section !== 'Description' && section !== 'Table of Contents'){
+            tableOfContents += `\n- [${section}](# ${section})`;
+        }
+    })
+    return tableOfContents;
+}
+
 // returns installation section of README 
 function renderInstallationSection(installation){
     if (installation === undefined) {
@@ -128,6 +139,7 @@ function generateMarkdown(data){
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
 ${renderDescriptionSection(data.description)}
+${renderTableOfContents(data.content)}
 ${renderInstallationSection(data.installation)}
 ${renderUsageSection(data.usage)}
 ${renderContributingSection(data.contributing)}
