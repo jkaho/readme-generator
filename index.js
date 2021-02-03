@@ -3,6 +3,8 @@ const fs = require('fs');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+const writeFileAsync = util.promisify(fs.writeFile);
+
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -95,10 +97,9 @@ const promptUser = () => {
 
 const init = () => {
     promptUser()
-    .then((answers) =>
-    {
-        console.log(generateMarkdown(answers));
-    })
+    .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
+    .then(() => console.log('New README file successfully generated!'))
+    .catch((err) => console.log('Oops! There was an error.', err));
 }
 
 init();

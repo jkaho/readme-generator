@@ -100,8 +100,7 @@ function renderLicenseSection(license){
     } else {
         return `## License
 This application is covered under the ${license} license.
-License link: ${renderLicenseLink(license)}
-        `;
+License link: ${renderLicenseLink(license)}`;
     }
 }
 
