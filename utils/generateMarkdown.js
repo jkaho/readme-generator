@@ -83,13 +83,13 @@ function renderLicenseLink(license){
         return '';
     } else {
         if (license === 'Apache 2.0 License') {
-            return '[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)';
+            return '(https://opensource.org/licenses/Apache-2.0)';
         } else if (license === 'GNU GPLv3') {
-            return '[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0)';
+            return '(https://www.gnu.org/licenses/gpl-3.0)';
         } else if (license === 'ISC') {
-            return '[ISC](https://opensource.org/licenses/ISC)';
+            return '(https://opensource.org/licenses/ISC)';
         } else {
-            return '[MIT](https://opensource.org/licenses/MIT)';
+            return '(https://opensource.org/licenses/MIT)';
         }
     }
 }
@@ -101,8 +101,7 @@ function renderLicenseSection(license){
     } else {
         return `## License
 This application is covered under the ${license} license.
-
-License link: ${renderLicenseLink(license)}`;
+For more information, [click here]${renderLicenseLink(license)}.`;
     }
 }
 
@@ -111,7 +110,7 @@ function renderGitHubLink(github){
     if (github === undefined) {
         return '';
     } else {
-        return `My GitHub Profile: [${github}](https://github.com/${github})`;
+        return `**My GitHub Profile**: [${github}](https://github.com/${github})`;
     }
 }
 
