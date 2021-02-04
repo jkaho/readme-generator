@@ -100,7 +100,9 @@ function renderLicenseSection(license){
         return '';
     } else {
         return `## License
-This application is covered under the ${license} license.\nLicense link: ${renderLicenseLink(license)}`;
+This application is covered under the ${license} license.
+
+License link: ${renderLicenseLink(license)}`;
     }
 }
 
@@ -128,7 +130,9 @@ function renderQuestionsSection(github, email){
         return '';
     } else {
         return `## Questions
-${renderGitHubLink(github)}\n${renderEmail(email)}`;
+${renderGitHubLink(github)}
+
+${renderEmail(email)}`;
     }
 }
 
