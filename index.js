@@ -19,6 +19,7 @@ const promptUser = () => {
             choices: [
                 {
                     name: 'Description',
+                    disabled: 'Default'
                 },
                 {
                     name: 'Table of Contents',
@@ -40,6 +41,7 @@ const promptUser = () => {
                 },
                 {
                     name: 'Questions',
+                    disabled: 'Default'
                 }
             ]
         },
@@ -47,7 +49,7 @@ const promptUser = () => {
             type: 'input',
             name: 'description',
             message: "Type your project description:",
-            when: (answers) => answers.content.includes('Description')
+            // when: (answers) => answers.content.includes('Description')
         },
         {
             type: 'input',
@@ -84,13 +86,13 @@ const promptUser = () => {
             type: 'input',
             name: 'github',
             message: "Your GitHub username:",
-            when: (answers) => answers.content.includes('Questions')
+            // when: (answers) => answers.content.includes('Questions')
         },
         {
             type: 'input',
             name: 'email',
             message: "Your email address:",
-            when: (answers) => answers.content.includes('Questions')
+            // when: (answers) => answers.content.includes('Questions')
         }
     ]);
 };
