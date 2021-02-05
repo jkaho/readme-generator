@@ -2,6 +2,8 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 ## Description
 This is an example description of a project.
+
+Here is some more information.
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
