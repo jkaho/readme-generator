@@ -3,11 +3,12 @@
 
 ## Description
 This is a command-line application that creates professionally structured README.md files. The user must input a project title and description, as well as their GitHub username and email to be added to the 'Questions' section of the README file. Users also have the choice of including the following sections:
-- 'Table of Contents'
-- 'Installation', 'Usage'
-- 'License'
-- 'Contributing'
-- 'Tests'
+- Table of Contents
+- Installation
+- Usage
+- License
+- Contributing
+- Tests
 
 The application takes user responses to the command-line prompts and uses it as content for the README file. 
 
