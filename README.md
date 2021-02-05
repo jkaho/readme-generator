@@ -17,7 +17,9 @@ The main motivation for this project was to create an application that facilitat
 ## Installation
 1. Clone this repository to your computer
 2. Open the command-line and navigate to the cloned repository (the 'readme-generator' directory)
-3. Install dependencies by entering the command: ![npm install](assets/images/npm-install.png)
+3. Install dependencies by entering the command: npm install
+
+![npm install](images/npm-install.png)
 
 ## Video Walkthrough
 
@@ -34,15 +36,15 @@ The main motivation for this project was to create an application that facilitat
 
 ### Application Interface
 
-![Professional README Generator application interface](assets/images/application.png)
+![Professional README Generator application interface](images/application.png)
 
 ### Generated README.md source code
 
-![Example of generated README.md source code](assets/images/readme.png)
+![Example of generated README.md source code](images/readme.png)
 
 ### Generated README.md viewed in GitHub repository
 
-![Example of generated README.md as viewed in a GitHub repository](assets/images/github-readme.png)
+![Example of generated README.md as viewed in a GitHub repository](images/github-readme.png)
 
 ## License
 This application is covered under the ISC license.
