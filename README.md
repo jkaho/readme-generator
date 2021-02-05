@@ -2,7 +2,7 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 ## Description
-This is a command-line application that creates professionally structured README.md files. The user must input a project title and description, as well as their GitHub username and email to be added to the 'Questions' section of the README file. Users also have the choice of including the following sections:
+This is a command-line application that creates professionally structured README.md files. The user must input a project title and description, as well as their GitHub username and email to be added to the 'Questions' section of the README file. Users also have the choice of including any of the following sections:
 - Table of Contents
 - Installation
 - Usage
@@ -10,14 +10,14 @@ This is a command-line application that creates professionally structured README
 - Contributing
 - Tests
 
-The application takes user responses to the command-line prompts and uses it as content for the README file. 
+The application takes a user's responses to the command-line prompts to use as content for the README file. 
 
 ## Motivations 
 The main motivation for this project was to create an application that facilitates the documentation aspect of projects for developers, which can be tedious and repetitive. 
 
 ## Installation
-1. Clone this repository to your computer
-2. Open the command-line and navigate to the cloned repository (the 'readme-generator' directory)
+1. Clone this repository to your local computer
+2. Open the command line and navigate to the cloned repository (the 'readme-generator' directory)
 3. Install dependencies by entering the command: npm install
 
 ![npm install](images/npm-install.png)
