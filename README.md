@@ -1,9 +1,7 @@
-# Example Project
+# Sample README
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 ## Description
-This is an example description of a project.
-
-Here is some more information.
+This is a sample README file generated from the 'Professional README Generator' application.
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -12,13 +10,13 @@ Here is some more information.
 - [Tests](#Tests)
 - [Questions](#Questions)
 ## Installation
-These are some installation instructions.
+Insert installation instructions here.
 ## Usage
-Usage information here.
+Insert usage information here.
 ## Contributing
-These are the contribution guidelines.
+Insert contribution guidelines here.
 ## Tests
-Here are some test instructions.
+Insert test instructions here.
 ## License
 This application is covered under the ISC license.
 For more information, [click here](https://opensource.org/licenses/ISC).
