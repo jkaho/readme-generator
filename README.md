@@ -1,7 +1,7 @@
 # Example Project
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 ## Description
-This is just an example of a description.
+This is an example project description.
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -12,15 +12,15 @@ This is just an example of a description.
 ## Installation
 These are some example installation instructions.
 ## Usage
-Please use like this...
+Example usage information.
 ## Contributing
-Contribute like this...
+Contribution guidelines here.
 ## Tests
-Test like this...
+Test instructions here.
 ## License
 This application is covered under the ISC license.
 For more information, [click here](https://opensource.org/licenses/ISC).
 ## Questions
 **My GitHub Profile**: [jkaho](https://github.com/jkaho)
 
-If you have any further questions, please email me at [j.h_7@yahoo.com](mailto:j.h_7@yahoo.com).
+If you have any further questions, please email me at [email@email.com](mailto:email@email.com).
