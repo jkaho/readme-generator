@@ -15,8 +15,8 @@ The application takes a user's responses to the command-line prompts to use as c
 ## Table of Contents
 - [Motivations](#Motivations)
 - [Installation](#Installation)
-- [Video Walkthrough](#Video Walkthrough)
-- [Technologies Used](#Technologies Used)
+- [Video Walkthrough](#Video)
+- [Technologies Used](#Technologies)
 - [Screenshots](#Screenshots)
 - [License](#License)
 - [Questions](#Questions)
