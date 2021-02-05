@@ -1,26 +1,54 @@
-# Sample README
+# Professional README Generator 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 ## Description
-This is a sample README file generated from the 'Professional README Generator' application.
-## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+This is a command-line application that creates professionally structured README.md files. The user must input a project title and description, as well as their GitHub username and email to be added to the 'Questions' section of the README file. Users also have the choice of including the following sections:
+- 'Table of Contents'
+- 'Installation', 'Usage'
+- 'License'
+- 'Contributing'
+- 'Tests'
+
+The application takes user responses to the command-line prompts and uses it as content for the README file. 
+
+## Motivations 
+The main motivation for this project was to create an application that facilitates the documentation aspect of projects for developers, which can be tedious and repetitive. 
+
 ## Installation
-Insert installation instructions here.
-## Usage
-Insert usage information here.
-## Contributing
-Insert contribution guidelines here.
-## Tests
-Insert test instructions here.
+1. Clone this repository to your computer
+2. Open the command-line and navigate to the cloned repository (the 'readme-generator' directory)
+3. Install dependencies by entering the command: ![npm install](assets/images/npm-install.png)
+
+## Video Walkthrough
+
+[Click here](https://drive.google.com/file/d/1I4z7O5Df3SYU64YqFhRczU2Q6OSWPIYO/view?usp=sharing) to view a video walkthrough of the README generator functionality.
+
+## Technologies used 
+- JavaScript
+- Command-line interface
+- node.js
+- npm inquirer package 
+- Screencastify
+
+## Screenshots
+
+### Application Interface
+
+![Professional README Generator application interface](assets/images/application.png)
+
+### Generated README.md source code
+
+![Example of generated README.md source code](assets/images/readme.png)
+
+### Generated README.md viewed in GitHub repository
+
+![Example of generated README.md as viewed in a GitHub repository](assets/images/github-readme.png)
+
 ## License
 This application is covered under the ISC license.
 For more information, [click here](https://opensource.org/licenses/ISC).
+
 ## Questions
 **My GitHub Profile**: [jkaho](https://github.com/jkaho)
 
-If you have any further questions, please email me at [email@email.com](mailto:email@email.com).
+If you have any further questions, please email me at [j.h_7@yahoo.com](mailto:j.h_7@yahoo.com).
