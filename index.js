@@ -1,10 +1,13 @@
+// import required dependencies/modules 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+// create writeFile function using promise
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// inquirer prompt (README prompts)
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -49,7 +52,6 @@ const promptUser = () => {
             type: 'input',
             name: 'description',
             message: "Type your project description:",
-            // when: (answers) => answers.content.includes('Description')
         },
         {
             type: 'input',
@@ -86,13 +88,11 @@ const promptUser = () => {
             type: 'input',
             name: 'github',
             message: "Your GitHub username:",
-            // when: (answers) => answers.content.includes('Questions')
         },
         {
             type: 'input',
             name: 'email',
             message: "Your email address:",
-            // when: (answers) => answers.content.includes('Questions')
         }
     ]);
 };
@@ -101,7 +101,7 @@ const init = () => {
     promptUser()
     .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
     .then(() => console.log('New README file successfully generated!'))
-    .catch((err) => console.log('Oops! There was an error.', err));
+    .catch((err) => console.log('Oops! Your README.md file was not created.', err));
 }
 
 init();
