@@ -27,7 +27,7 @@ The main motivation for this project was to create an application that facilitat
 ## Installation
 1. Clone this repository to your local computer
 2. Open the command line and navigate to the cloned repository (the 'readme-generator' directory)
-3. Install dependencies by entering the command: npm install
+3. Install dependencies (npm inquirer package) by entering the command: npm install
 
 ![npm install](images/npm-install.png)
 
