@@ -1,10 +1,10 @@
-// import required dependencies/modules 
+// imports required dependencies/modules 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// create writeFile function using promise
+// creates writeFile function using promise
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // inquirer prompt (README prompts)
