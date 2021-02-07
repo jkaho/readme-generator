@@ -105,7 +105,7 @@ For more information, [click here]${renderLicenseLink(license)}.`;
     }
 }
 
-// returns GitHub link
+// returns Github link
 function renderGitHubLink(github){
     if (github === undefined) {
         return '';
@@ -135,7 +135,7 @@ ${renderEmail(email)}`;
     }
 }
 
-// generate markdown for README
+// generates markdown for README
 function generateMarkdown(data){
     return `# ${data.title}
 ${renderLicenseBadge(data.license)}
