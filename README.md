@@ -37,7 +37,7 @@ The main motivation for this project was to create an application that facilitat
 ## Technologies Used 
 - JavaScript
 - Command-line interface
-- node.js
+- Node.js
 - npm inquirer package 
 - Screencastify
 
